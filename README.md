@@ -4,7 +4,7 @@ Um jogo da forca com um toque especial: em vez do boneco, uma flor perde pétala
 
 ## 🔗 Acesse
 
-Você pode jogar diretamente acessando o arquivo `link` e jogue em seu navegador.
+Você pode jogar baixando os arquivos e jogando diretamente em seu navegador.
 
 ---
 
