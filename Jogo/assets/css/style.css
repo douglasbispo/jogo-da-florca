@@ -1,0 +1,294 @@
+/* GERAL ________________________________ */
+:root {
+  --cor-principal: #ee2cab;
+  --cor-texto-principal: #000000;
+  --cor-fundo-botao-hover:#fd6194;
+  --cor-texto-botao: #ffffff;
+  --cor-vitoria:#008000;
+  --cor-derrota:#c90303;
+  --cor-borda: #eeeeee;
+  --cor-fundo: #ffffff;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--cor-texto-principal);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/fundo/fundo.png");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixa {
+  background-color: var(--cor-fundo);
+  border: 2px solid var(--cor-borda);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.titulo {
+  color: var(--cor-principal);
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitulo{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.botao {
+  background-color: var(--cor-principal);
+  color: var(--cor-texto-botao);
+  padding: 0.6rem 1.2rem;
+  margin: 0.4rem;
+  font-size: 16px;
+  min-width: 150px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.botao-teclado {
+  background-color: var(--cor-principal);
+  color: var(--cor-texto-botao);
+  min-width: 50px;
+  height: 40px;
+  margin: 3px;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: var(--cor-fundo-botao-hover);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.escondido {
+  display: none !important;
+}
+
+/* MENSAGENS ________________________________  */
+#campo-mansagem{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 999;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#campo-mansagem p {
+  width: 90%;
+}
+
+#mensagem {
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.mensagem-erro {
+  background-color: #fdd;
+  color: #a00;
+}
+
+.mensagem-sucesso {
+  background-color: #dfd;
+  color: #070;
+}
+
+/* INÍCIO ______________________ */
+#titulo-inicio {
+  display: flex;
+}
+
+#titulo-inicio img {
+  width: 50px;
+}
+
+#titulo-inicio img.icone1 {
+  margin-right: 10px;
+}
+
+#titulo-inicio img.icone2 {
+  margin-left: 10px;
+}
+
+#flor-inicio {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#flor-inicio video {
+  width: 200px;
+}
+
+#modo-jogo .botoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* FORMULÁRIO ______________________ */
+#formulario {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+#formulario input {
+  padding: 0.6rem;
+  margin: 0.4rem;
+  font-size: 1rem;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* JOGO ______________________ */
+#jogo .pontuacao {
+  margin: 1rem;
+}
+
+#jogo .pontuacao p {
+  font-size: 1rem;
+  font-weight: bold; 
+}
+
+#jogo .pontuacao p i.fa-check,
+#jogo .pontuacao p span#vitorias {
+  color: var(--cor-vitoria);
+}
+
+#jogo .pontuacao p i.fa-xmark,
+#jogo .pontuacao p span#derrotas {
+  color: var(--cor-derrota);
+}
+
+#jogo .caixa-acima {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#jogo .caixa-acima .imagem .imagem-flor {
+  width: 200px;
+  margin: 1rem auto;
+}
+
+#jogo .caixa-acima .informacoes {
+  max-width: 370px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+#jogo .caixa-acima .informacoes #dica {
+  font-size: 0.9rem;
+  /* font-weight: bold; */
+  margin: 1rem 0;
+}
+
+#jogo .caixa-acima .informacoes .palavra {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  margin: 1rem 0;
+}
+
+#jogo .caixa-abaixo {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+#jogo .caixa-abaixo #mensagem-fim-jogo {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+#jogo .caixa-abaixo #mensagem-fim-jogo i,
+#jogo .caixa-abaixo #mensagem-fim-jogo span {
+  color: var(--cor-principal);
+  font-weight: bold;
+}
+
+#jogo .caixa-abaixo .letras {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* FIM DE JOGO ______________________ */
+#resultado-final {
+  text-align: center;
+}
+
+#resultado-final .resultado {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+#resultado-final .resultado p {
+  margin: 8px 0;
+}
+
+#resultado-final .resultado p.partidas-final {
+  color: var(--cor-texto-principal);
+}
+
+#resultado-final .resultado p.vitorias-final,
+#resultado-final .resultado p.vitorias-final i,
+#resultado-final .resultado p.vitorias-final span {
+  color: var(--cor-vitoria);
+}
+
+#resultado-final .resultado p.derrotas-final,
+#resultado-final .resultado p.derrotas-final i,
+#resultado-final .resultado p.derrotas-final span {
+  color: var(--cor-derrota);
+}

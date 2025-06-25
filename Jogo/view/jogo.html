@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo da Florca</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="caixa">
+
+      <h1 class="titulo">Jogo da Florca</h1>
+  
+      <div id="jogo">
+        <div class="pontuacao">
+            <p><i class="fa-solid fa-check"></i> Vitórias: <span id="vitorias">0</span></p>
+            <p><i class="fa-solid fa-xmark"></i> Derrotas: <span id="derrotas">0</span></p>
+        </div>
+        <div class="caixa-acima">
+          <div class="imagem">
+            <img id="imagem-flor" src="../assets/img/flores/flor6.png" alt="Flor" class="imagem-flor" />
+          </div>
+          <div class="informacoes">
+            <div id="dica"></div>
+            <div id="palavra" class="palavra"></div>
+          </div>
+        </div> 
+        <div class="caixa-abaixo"> 
+          <p id="mensagem-fim-jogo"></p>
+          <div class="letras"></div>
+          <audio id="som-vitoria" src="../assets/som_vitoria.mp3"></audio>
+          <audio id="som-derrota" src="../assets/som_derrota.mp3"></audio>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
