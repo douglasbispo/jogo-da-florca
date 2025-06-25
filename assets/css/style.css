@@ -123,13 +123,13 @@ button:disabled {
 }
 
 .mensagem-erro {
-  background-color: #fdd;
-  color: #a00;
+  background-color: #ffdddd;
+  color: #aa0000;
 }
 
 .mensagem-sucesso {
-  background-color: #dfd;
-  color: #070;
+  background-color: #ddffdd;
+  color: #007700;
 }
 
 /* INÍCIO ______________________ */
