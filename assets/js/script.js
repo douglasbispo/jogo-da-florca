@@ -190,6 +190,7 @@ function verificarFim() {
   const correta = palavraAtual.split("").every(l => l === " " || letrasCorretas.includes(l));
   
   if (correta) {
+    mensagemFimJogo.classList.remove("escondido");
     mensagemFimJogo.innerHTML = `<i class="fa-solid fa-hand-peace"></i> Parabéns, Você venceu!`;
     somVitoria.play();
 
@@ -197,6 +198,7 @@ function verificarFim() {
 
     if (modoAtual === "1") vitorias++;
   } else if (erros >= maxErros) {
+    mensagemFimJogo.classList.remove("escondido");
     mensagemFimJogo.innerHTML = `<i class="fa-solid fa-skull"></i> Você perdeu! A palavra era: <span>${palavraAtual}</span>`;
     somDerrota.play();
     

@@ -77,7 +77,6 @@ body {
   min-width: 50px;
   height: 40px;
   margin: 3px;
-  padding: 5px;
   font-size: 1rem;
   border-radius: 6px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
@@ -185,7 +184,7 @@ button:disabled {
 
 /* JOGO ______________________ */
 #jogo .pontuacao {
-  margin: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
 }
 
 #jogo .pontuacao p {
@@ -212,7 +211,6 @@ button:disabled {
 
 #jogo .caixa-acima .imagem .imagem-flor {
   width: 200px;
-  margin: 1rem auto;
 }
 
 #jogo .caixa-acima .informacoes {
@@ -224,7 +222,7 @@ button:disabled {
 
 #jogo .caixa-acima .informacoes #dica {
   font-size: 0.9rem;
-  /* font-weight: bold; */
+  font-weight: bold;
   margin: 1rem 0;
 }
 
@@ -243,7 +241,7 @@ button:disabled {
 
 #jogo .caixa-abaixo #mensagem-fim-jogo {
   font-size: 1.2rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 #jogo .caixa-abaixo #mensagem-fim-jogo i,
@@ -291,4 +289,37 @@ button:disabled {
 #resultado-final .resultado p.derrotas-final i,
 #resultado-final .resultado p.derrotas-final span {
   color: var(--cor-derrota);
+}
+
+
+/* RESPONSIVIDADE ______________________ */
+@media (max-width: 600px) {
+  /* GERAL ______________________ */
+  .caixa {
+    padding: 20px 10px;
+    margin: 10px;
+  }
+
+  .botao-teclado {
+    height: 30px;
+    min-width: 40px;
+  }
+
+  /* JOGO ______________________ */
+  #jogo .pontuacao {
+    margin: 1rem 0.5rem 2rem 0.5rem;
+  }
+
+  #jogo .caixa-acima .imagem .imagem-flor {
+    width: 150px;
+  }
+
+  #jogo .caixa-acima .informacoes #dica {
+    font-size: 0.8rem;
+  }
+
+  #jogo .caixa-acima .informacoes .palavra {
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+  }
 }
